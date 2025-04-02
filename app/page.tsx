@@ -20,13 +20,13 @@ export default function Home() {
             </div>
 <h1
               className="text-[8vw] font-bold mb-6 leading-tight animate-fadeIn"
-              style={{ animationDelay: "0.2s", wordBreak: 'break-word' }}
+              style={{ animationDelay: "0.2s" }}
             >
-              Transformando <br />ideas en
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300 block">
-                {" "}
+              Transformando <br />
+              ideas en <br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">
                 experiencias
-              </span>{" "}
+              </span> <br />
               excepcionales.
             </h1>
             <p className="text-gray-400 mb-8 text-lg leading-relaxed animate-fadeIn" style={{ animationDelay: "0.3s" }}>
