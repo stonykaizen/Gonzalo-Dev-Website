@@ -14,6 +14,9 @@ const config = {
       },
     },
     extend: {
+      fontSize: {
+        "fluid": "clamp(2rem, 5vw, 6rem)"
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

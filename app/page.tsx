@@ -11,26 +11,22 @@ export default function Home() {
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-20 lg:py-32">
         <div className="flex flex-col-reverse lg:flex-row items-center justify-center lg:justify-start">
-          <div className="lg:w-1/2 mb-10 md:mb-0 lg:pr-12 md:text-center lg:text-left">
+          <div className="lg:w-1/2 mb-10 md:mb-0 lg:pr-4 md:text-center lg:text-left">
             <div
-              className="inline-block px-4 py-1 mt-4 lg:mt-0 bg-blue-900/30 text-blue-400 rounded-full text-sm font-medium mb-6 animate-fadeIn"
+              className="inline-block px-4 py-1 mt-8 lg:mt-0 bg-blue-900/30 text-blue-400 rounded-full text-sm font-medium mb-6 animate-fadeIn"
               style={{ animationDelay: "0.1s" }}
             >
               Desarrollo Web & Soluciones Digitales
             </div>
             <div className="w-full h-auto md:mx-auto lg:mx-0">
             {/* Contenedor para el H1, ahora con altura automática */}
-            <h1
-              className="text-[4rem] lg:text-[4rem] font-bold mb-6 leading-tight animate-fadeIn"
-              style={{ animationDelay: "0.2s" }}
-            >
-              Transformando <br />
-              ideas en <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">
-                experiencias
-              </span> <br />
-              excepcionales.
-            </h1>
+          
+
+            <h1 className="font-bold leading-tight animate-fadeIn text-start sm:text-left md:text-center lg:text-left w-full md:mx-auto lg:mx-0 break-words" style={{ animationDelay: "0.2s", fontSize: "clamp(3rem, 6vw, 4.5rem)", overflow: "hidden", whiteSpace: "nowrap" }}>Transformando <br />ideas en <br /><span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">experiencias</span> <br />excepcionales.</h1>
+
+
+
+
             </div>
             <p className="text-gray-400 mb-8 text-lg leading-relaxed animate-fadeIn max-w-[485px] md:mx-auto lg:mx-0" style={{ animationDelay: "0.3s" }}>
               Soy Gonzalo, desarrollador web freelance de Uruguay. Creo soluciones digitales personalizadas que ayudan a
@@ -50,7 +46,7 @@ export default function Home() {
                 Ver proyectos
               </Link>
             </div>
-            <div className="mt-10 flex justify-center lg:justify-start items-center animate-fadeIn md:mx-auto lg:mx-0" style={{ animationDelay: "0.5s" }}>
+            <div className="mt-10 flex sm:justify-start md:justify-center lg:justify-start items-center animate-fadeIn md:mx-auto lg:mx-0" style={{ animationDelay: "0.5s" }}>
               <div className="flex -space-x-2">
                 <div className="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center text-xs">JD</div>
                 <div className="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center text-xs">MK</div>
@@ -68,15 +64,15 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="lg:w-1/2 animate-fadeIn" style={{ animationDelay: "0.6s" }}>
+          <div className=" animate-fadeIn" style={{ animationDelay: "0.6s" }}>
             <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-blue-500/10 border border-gray-800">
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-500/20 z-0"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-500/20 z-0 "></div>
               <Image
-                src="/placeholder.svg?height=500&width=500"
+                src="/placeholder.svg"
                 alt="Gonzalo - Desarrollador Web"
                 width={500}
                 height={500}
-                className="mx-auto w-full h-auto rounded-2xl relative z-10"
+                className="mx-auto  h-auto rounded-2xl relative z-10"
               />
               <div className="absolute -bottom-2 -right-2 w-32 h-32 bg-gradient-to-br from-blue-400 to-cyan-300 rounded-full blur-3xl opacity-30"></div>
               <div className="absolute -top-2 -left-2 w-32 h-32 bg-gradient-to-br from-purple-400 to-blue-300 rounded-full blur-3xl opacity-30"></div>
