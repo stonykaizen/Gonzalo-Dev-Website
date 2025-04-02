@@ -19,7 +19,7 @@ export default function Home() {
               Desarrollo Web & Soluciones Digitales
             </div>
 <h1
-              className="text-[10vw] font-bold mb-6 leading-tight animate-fadeIn"
+              className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-6 leading-tight animate-fadeIn"
               style={{ animationDelay: "0.2s", wordBreak: 'break-word' }}
             >
               Transformando <br />ideas en
