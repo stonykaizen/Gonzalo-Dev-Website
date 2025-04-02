@@ -9,17 +9,19 @@ export default function Home() {
   return (
     <main className="relative min-h-screen">
       {/* Hero Section */}
-      <section className="container mx-auto px-4 py-20 md:py-32">
-        <div className="flex flex-col md:flex-row items-center">
-          <div className="md:w-1/2 mb-10 md:mb-0 md:pr-12">
+      <section className="container mx-auto px-4 py-20 lg:py-32">
+        <div className="flex flex-col-reverse lg:flex-row items-center justify-center lg:justify-start">
+          <div className="lg:w-1/2 mb-10 md:mb-0 lg:pr-12 md:text-center lg:text-left">
             <div
-              className="inline-block px-4 py-1 bg-blue-900/30 text-blue-400 rounded-full text-sm font-medium mb-6 animate-fadeIn"
+              className="inline-block px-4 py-1 mt-4 lg:mt-0 bg-blue-900/30 text-blue-400 rounded-full text-sm font-medium mb-6 animate-fadeIn"
               style={{ animationDelay: "0.1s" }}
             >
               Desarrollo Web & Soluciones Digitales
             </div>
-<h1
-              className="text-[8vw] font-bold mb-6 leading-tight animate-fadeIn"
+            <div className="w-full h-auto md:mx-auto lg:mx-0">
+            {/* Contenedor para el H1, ahora con altura automática */}
+            <h1
+              className="text-[4rem] lg:text-[4rem] font-bold mb-6 leading-tight animate-fadeIn"
               style={{ animationDelay: "0.2s" }}
             >
               Transformando <br />
@@ -29,11 +31,12 @@ export default function Home() {
               </span> <br />
               excepcionales.
             </h1>
-            <p className="text-gray-400 mb-8 text-lg leading-relaxed animate-fadeIn" style={{ animationDelay: "0.3s" }}>
+            </div>
+            <p className="text-gray-400 mb-8 text-lg leading-relaxed animate-fadeIn max-w-[485px] md:mx-auto lg:mx-0" style={{ animationDelay: "0.3s" }}>
               Soy Gonzalo, desarrollador web freelance de Uruguay. Creo soluciones digitales personalizadas que ayudan a
               negocios a crecer y alcanzar sus objetivos.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 animate-fadeIn" style={{ animationDelay: "0.4s" }}>
+            <div className="flex flex-col md:flex-row gap-4 justify-center lg:justify-start animate-fadeIn" style={{ animationDelay: "0.4s" }}>
               <Link
                 href="/contacto"
                 className="bg-gradient-to-r from-blue-600 to-blue-400 hover:from-blue-500 hover:to-blue-300 text-white px-8 py-4 rounded-md transition duration-300 text-center font-medium shadow-lg shadow-blue-500/20 flex items-center justify-center"
@@ -47,13 +50,13 @@ export default function Home() {
                 Ver proyectos
               </Link>
             </div>
-            <div className="mt-10 flex items-center animate-fadeIn" style={{ animationDelay: "0.5s" }}>
+            <div className="mt-10 flex justify-center lg:justify-start items-center animate-fadeIn md:mx-auto lg:mx-0" style={{ animationDelay: "0.5s" }}>
               <div className="flex -space-x-2">
                 <div className="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center text-xs">JD</div>
                 <div className="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center text-xs">MK</div>
                 <div className="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center text-xs">TS</div>
               </div>
-              <div className="ml-4">
+              <div className="ml-4 ">
                 <div className="flex items-center">
                   <Star className="h-4 w-4 text-yellow-400 fill-yellow-400" />
                   <Star className="h-4 w-4 text-yellow-400 fill-yellow-400" />
@@ -65,7 +68,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="md:w-1/2 animate-fadeIn" style={{ animationDelay: "0.6s" }}>
+          <div className="lg:w-1/2 animate-fadeIn" style={{ animationDelay: "0.6s" }}>
             <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-blue-500/10 border border-gray-800">
               <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-500/20 z-0"></div>
               <Image
@@ -73,7 +76,7 @@ export default function Home() {
                 alt="Gonzalo - Desarrollador Web"
                 width={500}
                 height={500}
-                className="w-full h-auto rounded-2xl relative z-10"
+                className="mx-auto w-full h-auto rounded-2xl relative z-10"
               />
               <div className="absolute -bottom-2 -right-2 w-32 h-32 bg-gradient-to-br from-blue-400 to-cyan-300 rounded-full blur-3xl opacity-30"></div>
               <div className="absolute -top-2 -left-2 w-32 h-32 bg-gradient-to-br from-purple-400 to-blue-300 rounded-full blur-3xl opacity-30"></div>
